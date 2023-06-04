@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  backend:
+    image: evercoinx/faraway:nft-collection-deployer-backend
+    ports:
+      - "4000:4000"
+    networks:
+      - your-network
+
+  frontend:
+    image: evercoinx/faraway:nft-collection-deployer-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - your-network
+
+  tests:
+    shm_size: '4gb'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - your-network
+
+networks:
+  your-network:
+    driver: bridge

@@ -1,0 +1,26 @@
+2023/06/04-09:51:24.788 6607 Reusing MANIFEST /Users/leokhanin/PycharmProjects/test_NFT/profile/Profile_6/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn/MANIFEST-000001
+2023/06/04-09:51:24.789 6607 Recovering log #4404
+2023/06/04-09:51:24.817 6607 Level-0 table #4406: started
+2023/06/04-09:51:24.847 6607 Level-0 table #4406: 1252313 bytes OK
+2023/06/04-09:51:24.859 6607 Delete type=0 #4404
+2023/06/04-09:51:38.092 6a03 Level-0 table #4409: started
+2023/06/04-09:51:38.116 6a03 Level-0 table #4409: 1252386 bytes OK
+2023/06/04-09:51:38.125 6a03 Delete type=0 #4407
+2023/06/04-09:51:43.297 6a03 Level-0 table #4411: started
+2023/06/04-09:51:43.329 6a03 Level-0 table #4411: 1245359 bytes OK
+2023/06/04-09:51:43.337 6a03 Delete type=0 #4408
+2023/06/04-09:51:43.339 6a03 Compacting 4@0 + 1@1 files
+2023/06/04-09:51:43.379 6a03 Generated table #4412@0: 1 keys, 1245359 bytes
+2023/06/04-09:51:43.379 6a03 Compacted 4@0 + 1@1 files => 1245359 bytes
+2023/06/04-09:51:43.388 6a03 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/06/04-09:51:43.390 6a03 Delete type=2 #4403
+2023/06/04-09:51:43.390 6a03 Delete type=2 #4401
+2023/06/04-09:51:43.390 6a03 Delete type=2 #4411
+2023/06/04-09:51:43.390 6a03 Delete type=2 #4406
+2023/06/04-09:51:43.390 6a03 Delete type=2 #4409
+2023/06/04-09:51:48.834 6a03 Level-0 table #4414: started
+2023/06/04-09:51:48.865 6a03 Level-0 table #4414: 1244516 bytes OK
+2023/06/04-09:51:48.874 6a03 Delete type=0 #4410
+2023/06/04-09:51:51.077 6a03 Level-0 table #4416: started
+2023/06/04-09:51:51.106 6a03 Level-0 table #4416: 1244516 bytes OK
+2023/06/04-09:51:51.116 6a03 Delete type=0 #4413
