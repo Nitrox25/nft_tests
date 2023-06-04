@@ -10,9 +10,8 @@ from api import get_event_by_name, get_event_by_collection_id
 @pytest.fixture(scope="module")
 def setup(browser):
     main_page = SearchHelper(browser)
-    main_page.go_to_site()
     main_page.authorization()
-    main_page.enter_password(words="1234")
+    main_page.enter_password(words="hpssbuka72A")
     main_page.enter_button().click()
     main_page.go_to_site()
     return main_page
@@ -20,6 +19,10 @@ def setup(browser):
 
 @pytest.mark.parametrize("name, symbol, token_url", [
     ("test_name1", "sym1", "https://url1.com"),
+    ("test_name2", "sym2", "https://url2.com"),
+    ("very_long_name_" + "a" * 100, "sym3", "https://url3.com"),
+    ("test_name4", "very_long_symbol_" + "b" * 100, "https://url4.com"),
+    ("test_name5", "sym5", "invalid_url")
 ])
 def test_collection(setup, name, symbol, token_url):
     main_page = setup
@@ -28,7 +31,6 @@ def test_collection(setup, name, symbol, token_url):
         main_page.enter_collection_symbol(words=symbol)
         main_page.enter_collection_token_url(words=token_url)
         main_page.buttons_send_to()[0].click()
-
         main_page.wait_for_new_window()
         main_page.notification()
         main_page.enter_button_conform().click()
@@ -42,6 +44,7 @@ def test_collection(setup, name, symbol, token_url):
 
 @pytest.mark.parametrize('collection_address, recipient_address',
                          [('test_name1', '0x8b37ACE77Fc4837f0507eF4f5B78E4164aF29Ef7'),
+
                           ])
 def test_NFT(setup, collection_address, recipient_address):
     main_page = setup
