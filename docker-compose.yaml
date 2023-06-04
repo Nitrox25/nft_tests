@@ -14,18 +14,18 @@ services:
     networks:
       - your-network
 
-  tests:
-    shm_size: '4gb'
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
-    depends_on:
-      - frontend
-      - backend
-    networks:
-      - your-network
+#  tests:
+#    shm_size: '4gb'
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - .:/app
+#    depends_on:
+#      - frontend
+#      - backend
+#    networks:
+#      - your-network
 
 networks:
   your-network:
