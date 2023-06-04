@@ -12,7 +12,7 @@ def setup(browser):
     main_page = SearchHelper(browser)
     main_page.go_to_site()
     main_page.authorization()
-    main_page.enter_password(words="hpssbuka72A")
+    main_page.enter_password(words="1234")
     main_page.enter_button().click()
     main_page.go_to_site()
     return main_page
