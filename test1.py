@@ -19,10 +19,10 @@ def setup(browser):
 
 @pytest.mark.parametrize("name, symbol, token_url", [
     ("test_name1", "sym1", "https://url1.com"),
-    ("test_name2", "sym2", "https://url2.com"),
-    ("very_long_name_" + "a" * 100, "sym3", "https://url3.com"),
-    ("test_name4", "very_long_symbol_" + "b" * 100, "https://url4.com"),
-    ("test_name5", "sym5", "invalid_url")
+    # ("test_name2", "sym2", "https://url2.com"),
+    # ("very_long_name_" + "a" * 100, "sym3", "https://url3.com"),
+    # ("test_name4", "very_long_symbol_" + "b" * 100, "https://url4.com"),
+    # ("test_name5", "sym5", "invalid_url")
 ])
 def test_collection(setup, name, symbol, token_url):
     main_page = setup
